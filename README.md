@@ -9,13 +9,6 @@ dM_i/dt = α_i * M_i + Σ_j β_ij * M_j + b_i, for i = 1,...,n
 
 *Features:* Linear & abstract models, interactive input, memory strength evolution, pairwise phase portraits, behavior prediction.
 
-*Installation:*
-
-bash
-git clone https://github.com/yourusername/memory-dynamics-simulation.git
-pip install -r requirements.txt
-
-
 *Usage:* python memory_dynamics.py → enter parameters, initial strengths, simulation time & threshold.
 
 *Output:* Time evolution plots, dominant memory summary, pairwise phase portraits.
