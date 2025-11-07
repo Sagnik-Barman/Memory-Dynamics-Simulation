@@ -9,7 +9,7 @@ Simulate and visualize *interacting memory systems* with linear dynamics in Pyth
 $$
 \frac{dM_i}{dt} = \alpha_i M_i + \sum_j \beta_{ij} M_j + b_i, \quad \text{for } i = 1, \ldots, n
 $$
-
+$$ where: - $$ \alpha_1, \alpha_2 $$: self-decay rates of memories - $$ \beta_{12}, \beta_{21} $$: interaction strengths between memories 
 *Features:* Linear & abstract models, interactive input, memory strength evolution, pairwise phase portraits, behavior prediction.
 
 *Usage:* python memory_dynamics.py → enter parameters, initial strengths, simulation time & threshold.
