@@ -7,8 +7,9 @@ Simulate and visualize *interacting memory systems* with linear dynamics in Pyth
 *Mathematical Model:*
 
 $$
-\frac{dM_i}{dt} = \alpha_i M_i + \sum_j \beta_{ij} M_j + b_i, \quad \text{for } i = 1, \ldots, n
+\frac{dM_i}{dt} = \alpha_i M_i + \sum_j \beta_{ij} M_j + b_i, \quad i = 1, \ldots, n
 $$
+
 *Features:* Linear & abstract models, interactive input, memory strength evolution, pairwise phase portraits, behavior prediction.
 
 *Usage:* python memory_dynamics.py → enter parameters, initial strengths, simulation time & threshold.
