@@ -36,7 +36,7 @@ class AbstractMemorySystem(ABC):
         if nplots == 0:
             print("Not enough memories for pairwise phase portraits.")
             return
-        # Calculate grid size for subplots
+        
         cols = min(nplots, 3)
         rows = int(np.ceil(nplots / cols))
         plt.figure(figsize=(5 * cols, 5 * rows))
@@ -73,11 +73,10 @@ class AbstractMemorySystem(ABC):
         """
         plt.figure(figsize=(12, 5))
 
-        # Time evolution subplot
         plt.subplot(1, 2, 1)
         for i in range(self.n):
             plt.plot(t, sol[:, i], label=f'Memory {i+1}')
-            # mark initial point on the curve
+          
             plt.plot(t[0], sol[0, i], 'o')
         plt.xlabel('Time')
         plt.ylabel('Memory Strength')
@@ -85,7 +84,6 @@ class AbstractMemorySystem(ABC):
         plt.legend()
         plt.grid()
 
-        # Right subplot: small summary table (final strengths) and predicted behavior
         plt.subplot(1, 2, 2)
         final_vals = sol[-1]
         txt = "Final Memory Strengths:\n\n"
@@ -175,9 +173,9 @@ def main():
     print(f"\nFinal Memory Strengths: " + ", ".join([f"{val:.3f}" for val in solution[-1]]))
     print(f"Predicted Behavior: {behavior}\n")
 
-    # All memory time evolutions
+
     mem_sys.plot_results(t, solution, M0)
-    # All possible phase portraits (every memory pair)
+    
     mem_sys.plot_all_phase_portraits(M0)
 
 if __name__ == "__main__":
