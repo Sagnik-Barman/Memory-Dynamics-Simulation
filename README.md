@@ -13,8 +13,10 @@ $$
 
 **where:**
 
-- $\alpha_i, \alpha_j$: self-decay rates of memories  
-- $\beta_{ij}, \beta_{ji}$: interaction strengths between memories
+- $\alpha_1, \alpha_2$: self-decay rates of memories  
+- $\beta_{12}, \beta_{21}$: interaction strengths between memories  
+- $b_i$: external bias or input applied to memory *i* (e.g., attention, reinforcement, or suppression)
+
 
 *Features:* Linear & abstract models, interactive input, memory strength evolution, pairwise phase portraits, behavior prediction.
 
