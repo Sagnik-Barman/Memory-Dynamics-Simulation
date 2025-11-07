@@ -20,7 +20,7 @@ $$
 
 *Features:* Linear & abstract models, interactive input, memory strength evolution, pairwise phase portraits, behavior prediction.
 
-*Usage:* python memory_dynamics.py → enter parameters, initial strengths, simulation time & threshold.
+*Usage:* python Memory_Interactions.py → enter parameters, initial strengths, simulation time & threshold.
 
 *Output:* Time evolution plots, dominant memory summary, pairwise phase portraits.
 Requirements: numpy, scipy, matplotlib.
